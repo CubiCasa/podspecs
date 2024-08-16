@@ -24,12 +24,12 @@ Integrate the CubiCasa SDK into your app to make scans for the CubiCasa floor pl
   s.license          = { :type => 'proprietary', :text => 'Copyright 2020 CubiCasa Oy. All rights reserved.' }
   s.author           = { 'CubiCasa' => 'info@cubicasa.com' }
   s.source           = { :git => 'https://github.com/CubiCasa/ios-sdk-distribution.git', :tag => s.version.to_s }
-  s.vendored_frameworks = "CubiCapture.xcframework"
+  s.vendored_frameworks = "CubiCapture.xcframework", "CubiCaptureSDK.framework"
 
   s.platform = :ios
   s.ios.deployment_target = '16.0'
 
-  s.frameworks = 'AVFoundation', 'ARKit', 'CoreGraphics', 'Speech'
-  s.dependency 'Zip', '~> 2.1.0'
-  s.dependency 'ZIPFoundation', '~> 0.9.19'
+  s.frameworks = 'AVFoundation', 'ARKit', 'Speech', 'CoreGraphics'
+#  s.dependency 'Zip', '~> 2.1'
+#  s.dependency 'ZIPFoundation', '~> 0.9'
 end
