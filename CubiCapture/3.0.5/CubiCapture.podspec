@@ -11,7 +11,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CubiCapture'
-  s.version          = '3.0.6'
+  s.version          = '3.0.5'
   s.summary          = 'CubiCasa SDK'
   s.swift_versions   = '5'
 
